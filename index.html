@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>密碼產生器Password Generator</title>
+</head>
+
+<body>
+    <h1 id="title">密碼產生器 Password Generator</h1>
+
+    <div class="box">
+        <div id="Passwordlength">
+            <label for="length">密碼長度:</label>
+            <input type="number" id="length" min="4" required>
+        </div>
+        
+        <div class="PasswordRule" >
+            <div id="rule">
+                <input type="checkbox" id="numbers"><span>包含數字</span>
+            </div>
+            <div id="rule"><input type="checkbox" id="uppercase"><span>包含大寫字母</span></div>
+           
+            <div id="rule"><input type="checkbox" id="lowercase"><span>包含小寫字母</span></div>
+            
+            <div id="rule"><input type="checkbox" id="symbols"><span>包含特殊字元</span></div>
+        </div>
+        <div class="excludeRule">
+            <label for="exclude" >排除字元:</label>
+            <input type="text" id="exclude" placeholder="例如: 0Oa!">
+        </div>
+       
+    </div>
+
+    <button id="generateBtn">產生密碼</button>
+
+    <br><br>
+
+    <input type="text" id="password" readonly>
+
+    <script src="main.JS"></script>
+</body>
+
+</html>
