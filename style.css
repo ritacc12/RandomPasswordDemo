@@ -1,9 +1,11 @@
 body {
+   
     font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
     text-align: center;
-    padding: 18px;
+    padding: 20px;
     background-color: #3F6294;
     color:#2F3D40;
+   
 }
 
 #title{
@@ -14,13 +16,14 @@ body {
 
 .box {
     width: 400px;
-    margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: left;
     background-color:#F3F6F3;
     font-size: 20px;
+    margin: 20px auto;
+    margin-top: 40px;
 }
 
 input[type="number"] {
@@ -98,7 +101,7 @@ input[type="checkbox"] + span {
     border-radius: 5px;
     font-weight: 600;   
     background-color: #DEEFE7;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 button:hover{
