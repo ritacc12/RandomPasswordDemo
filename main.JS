@@ -8,6 +8,7 @@ const generateBtn = document.getElementById("generateBtn");
 const passwordOutput = document.getElementById("password");
 const resetBtn = document.getElementById("resetBtn");
 const regenerateBtn = document.getElementById("regenerateBtn");
+const copyBtn = document.getElementById("copyBtn");
 
 const numbers = "0123456789";
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -63,6 +64,19 @@ function resetPassword() {
   passwordOutput.value = "";
 }
 
+function copyPassword() {
+  const password = passwordOutput.value;
+  if (password) {
+    navigator.clipboard
+      .writeText(password)
+      .then(() => alert("密碼已複製到剪貼簿"))
+      .catch((err) => alert("複製失敗: " + err));
+  } else {
+    alert("請先生成密碼");
+  }
+}
+
 generateBtn.addEventListener("click", generatePassword);
 resetBtn.addEventListener("click", resetPassword);
 regenerateBtn.addEventListener("click", generatePassword);
+copyBtn.addEventListener("click", copyPassword);
