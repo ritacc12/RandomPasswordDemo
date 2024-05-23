@@ -6,6 +6,8 @@ const symbolsCheckbox = document.getElementById("symbols");
 const excludeInput = document.getElementById("exclude");
 const generateBtn = document.getElementById("generateBtn");
 const passwordOutput = document.getElementById("password");
+const resetBtn = document.getElementById("resetBtn");
+const regenerateBtn = document.getElementById("regenerateBtn");
 
 const numbers = "0123456789";
 const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -51,4 +53,16 @@ function generatePassword() {
   passwordOutput.value = password;
 }
 
+function resetPassword() {
+  lengthInput.value = "";
+  numbersCheckbox.checked = false;
+  uppercaseCheckbox.checked = false;
+  lowercaseCheckbox.checked = false;
+  symbolsCheckbox.checked = false;
+  excludeInput.value = "";
+  passwordOutput.value = "";
+}
+
 generateBtn.addEventListener("click", generatePassword);
+resetBtn.addEventListener("click", resetPassword);
+regenerateBtn.addEventListener("click", generatePassword);
