@@ -1,13 +1,14 @@
 body {
     font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 18px;
     background-color: #3F6294;
     color:#2F3D40;
 }
 
 #title{
     color: white;
+    text-shadow: 1px 1px 2px #B4BEC9;
 }
 
 
@@ -24,7 +25,7 @@ body {
 
 input[type="number"] {
     width: 80px;
-    margin-left: 5px;
+    margin-left: 10px;
     padding-left: 5px;
     font-size: 18px;
      border:solid #ccc;
@@ -34,9 +35,8 @@ input[type="number"] {
 }
 
 input[type="text"] {
-    width: 200px;
-    height: 20px;
-    margin-left: 5px;
+    width: 150px;
+    margin-left: 10px;
     padding-left: 5px;
     font-size: 18px;
     border:solid #ccc;
@@ -60,10 +60,40 @@ input[type="checkbox"] + span {
   margin-left: 10px;
 }
 
-button {
+.btnGroup{
+    display: flex;
+    justify-content: center;
+}
+
+#generateBtn {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 14px;
     background-color:#FFB30D;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+#regenerateBtn{
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #9FC131;
+    margin: 5px;
+}
+
+#resetBtn{
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 600;   
+    background-color: #D6D58E;
+    margin: 5px;
+}
+
+button:hover{
+    border: 2px solid white;
 }
 
 .PasswordRule{
@@ -82,4 +112,15 @@ button {
 
 #exclude{
     margin-top: 10px;
+}
+
+.result{
+    margin-top: 20px;
+}
+
+#password{
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    font-weight: 600;
 }
